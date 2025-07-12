@@ -10,6 +10,8 @@ Teste básico utilizando Java, Selenium e Junit. utilização da biblioteca fake
 
 [Junit](https://junit.org/)
 
+[Site Seu Barriga utilizado nos testes](https://www.wcaquino.me/)
+
 ## Rodando os testes
 
 ```bash
