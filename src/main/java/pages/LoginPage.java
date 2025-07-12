@@ -14,15 +14,9 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void preencherUsuario(String usuario) {
+    public void fazerLogin(String usuario, String senha) {
         driver.findElement(inputUsername).sendKeys(usuario);
-    }
-
-    public void preencherSenha(String senha) {
         driver.findElement(inputPassword).sendKeys(senha);
-    }
-
-    public void clicarLogin() {
         driver.findElement(btnLogin).click();
     }
 }

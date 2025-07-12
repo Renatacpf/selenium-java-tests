@@ -3,6 +3,7 @@ package tests;
 import base.BaseTest;
 import org.junit.jupiter.api.Test;
 import pages.LoginPage;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginTest extends BaseTest {
 
@@ -10,9 +11,8 @@ public class LoginTest extends BaseTest {
     public void testLoginComSucesso() {
         driver.get("https://exemplo.com/login");
         LoginPage loginPage = new LoginPage(driver);
+        loginPage.fazerLogin("usuario", "senha123");
 
-        loginPage.preencherUsuario("usuario");
-        loginPage.preencherSenha("senha123");
-        loginPage.clicarLogin();
+        assertTrue(driver.getTitle().contains("Dashboard"));
     }
 }
