@@ -10,7 +10,7 @@ public class FakerGenerator {
     }
 
     public static String gerarNomeUsuario() {
-        return faker.name().username();
+        return faker.internet().emailAddress();
     }
 
     public static String gerarSenha() {
